@@ -1,0 +1,23 @@
+https://mlinproduction.com/docker-for-ml-part-1/ 
+https://docs.docker.com/docker-for-mac/ 
+ 
+docker run --rm -ti python:3.6 python 
+ 
+docker [cmd] [image:tag] [cmd to execute in container] 
+ 
+Here we’re instructing Docker to run a new container from the python:3.6 image and to run python interactively within that container. The -—rm flag tells Docker to remove the container once we exit the process. The -ti flags allocate a tty for the interactive process i.e. allow us to interact with the container from our terminal. 
+ 
+docker run --detach --publish=80:80 --name=webserver nginx 
+ 
+Dockerised web server 
+ 
+docker run --detach --publish=80:80 --name=webserver nginx 
+ 
+View the details on the container while your web server is running (with docker container ls or docker ps): 
+ 
+docker run --rm -p 8888:8888 jupyter/scipy-notebook 
+ 
+docker exec -ti container_id bash 
+ 
+Here the bash command is executed inside the container with container_id and it lets us ssh inside the container.... quite cool
+
