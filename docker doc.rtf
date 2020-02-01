@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red153\green153\blue153;\red0\green119\blue170;
+\red26\green26\blue26;\red51\green51\blue51;\red139\green0\blue139;\red51\green68\blue76;\red12\green81\blue118;
+\red221\green74\blue104;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c100000;\csgenericrgb\c60000\c60000\c60000;\csgenericrgb\c0\c46667\c66667;
+\csgenericrgb\c10196\c10196\c10196;\csgenericrgb\c20000\c20000\c20000;\csgenericrgb\c54510\c0\c54510;\csgenericrgb\c20000\c26667\c29804;\csgenericrgb\c4706\c31765\c46275;
+\csgenericrgb\c86667\c29020\c40784;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri-46\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://mlinproduction.com/docker-for-ml-part-1/%22%20%5Ct%20%22_blank"}}{\fldrslt 
+\f0\fs24 \cf2 \ul \ulc2 https://mlinproduction.com/docker-for-ml-part-1/}}
+\f0\fs22 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://docs.docker.com/docker-for-mac/%22%20%5Ct%20%22_blank"}}{\fldrslt 
+\f0\fs24 \cf2 \ul \ulc2 https://docs.docker.com/docker-for-mac/}}
+\f0\fs22 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f0\fs24 \cf0 \'a0
+\f1\fs18 \
+
+\f0\fs24 docker run --rm -ti\'a0python:3.6 python\'a0
+\f1\fs18 \
+
+\f0\fs24 \'a0
+\f1\fs18 \
+
+\f0\fs24 docker\'a0\cf3 [\cf0 cmd\cf3 ]\cf0 \'a0\cf3 [\cf0 image:tag\cf3 ]\cf0 \'a0\cf3 [\cf0 cmd\'a0to execute\'a0\cf4 in\cf0 \'a0container\cf3 ]\cf0 \'a0
+\f1\fs18 \
+
+\f0\fs24 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f0\fs24 \cf5 Here we\'92re instructing Docker to run a new container from the\'a0python:3.6\'a0image and to run python interactively within that container. The\'a0-\'97rm\'a0flag tells Docker to remove the container once we exit the process. The\'a0-ti\'a0flags allocate a\'a0tty\'a0for the interactive process i.e. allow us to interact with the container from our terminal.\cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f0\fs24 \cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf6 docker run\'a0\cf7 --detach\cf6 \'a0\cf7 --publish\cf6 =80:80\'a0\cf7 --name\cf6 =webserver\'a0nginx\cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf6 Dockerised\'a0web server\cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf6 docker run\'a0\cf7 --detach\cf6 \'a0\cf7 --publish\cf6 =80:80\'a0\cf7 --name\cf6 =webserver\'a0nginx\cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs19 \cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs21 \cf8 View the details on the container while your web server is running (with\'a0
+\fs18 \cf9 docker container ls
+\fs21 \cf8 \'a0or\'a0
+\fs18 \cf9 docker\'a0ps
+\fs21 \cf8 ):\cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs21 \cf0 \'a0
+\f1\fs18 \
+\pard\pardeftab720\ri-46\partightenfactor0
+
+\f2\fs24 \cf0 docker run --rm -p 8888:8888\'a0jupyter/scipy-notebook\'a0
+\f1\fs18 \
+
+\f2\fs24 \'a0
+\f1\fs18 \
+
+\f2\fs24 docker\'a0\cf10 exec\cf0 \'a0-ti\'a0container_id\'a0\cf10 bash\cf0 \'a0
+\f1\fs18 \
+
+\f2\fs24 \'a0
+\f1\fs18 \
+
+\f2\fs24 Here the bash command is executed inside the container with\'a0container_id\'a0and it lets us\'a0ssh\'a0inside the container.... quite cool
+\f1\fs18 \
+}
